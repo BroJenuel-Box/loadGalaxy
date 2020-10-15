@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2833;
+  }
+  
+  .center {
+    width: 60px;
+    height: 60px;
+    background: #72ece3;
+    border-radius: 93% 82% 79% 84%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotateOne 4s linear forwards infinite;
+  }
+  .center .planetOne {
+    position: absolute;
+    width: 70px;
+    height: 2px;
+    left: 50%;
+    transform-origin: left;
+    animation: rotateOne 3s linear forwards infinite;
+  }
+  .center .planetOne::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    border: 1px solid #72ece3;
+    border-radius: 100%;
+    top: -62px;
+    right: 6px;
+  }
+  .center .planetOne::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #72ece3;
+    right: 0;
+    top: -6px;
+    border-radius: 93% 88% 91% 80%;
+  }
+  .center .planetTwo {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    left: 50%;
+    transform-origin: left;
+    animation: rotateOne 4s linear forwards infinite;
+  }
+  .center .planetTwo::before {
+    content: "";
+    position: absolute;
+    width: 183px;
+    height: 183px;
+    border: 1px solid #72ece3;
+    border-radius: 100%;
+    top: -91px;
+    right: 8px;
+  }
+  .center .planetTwo::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #72ece3;
+    right: 0;
+    top: -7px;
+    border-radius: 93% 88% 91% 80%;
+  }
+  .center .planetThree {
+    position: absolute;
+    width: 130px;
+    height: 2px;
+    left: 50%;
+    transform-origin: left;
+    animation: rotateOne 5s linear forwards infinite;
+  }
+  .center .planetThree::before {
+    content: "";
+    position: absolute;
+    width: 248px;
+    height: 248px;
+    border: 1px solid #72ece3;
+    border-radius: 100%;
+    top: -126px;
+    right: 5px;
+  }
+  .center .planetThree::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #72ece3;
+    right: 0;
+    top: -7px;
+    border-radius: 93% 88% 91% 80%;
+  }
+  
+  @keyframes rotateOne {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
